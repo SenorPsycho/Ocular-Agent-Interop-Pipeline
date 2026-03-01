@@ -1,4 +1,5 @@
 EyeAgent-Sync: Agentic Orchestration for Standardized Ophthalmic Reporting
+
 📌 Overview
 EyeAgent-Sync is a multi-agent AI pipeline designed to bridge the "Interoperability Gap" in digital ophthalmology. While traditional AI models focus solely on diagnosis, this project introduces an Agentic Layer that automates the collection, validation, and standardization of clinical findings into hospital-ready formats (HL7 FHIR).
 
@@ -42,15 +43,16 @@ Circular Cropping: Automated ROI (Region of Interest) extraction centered on the
 🚀 Getting Started
 1. Installation
 Bash
-git clone https://github.com/yourusername/EyeAgent-Sync.git
+git clone https://github.com/SenorPsycho/EyeAgent-Sync.git
 cd EyeAgent-Sync
 pip install -r requirements.txt
 2. Run a Standardized Scan
 Python
 # Coming soon: A single command to process an image and generate a FHIR JSON report
 python run_pipeline.py --image data/sample_retina.jpg --output report.json
+
 🎯 Research Goals (M.S. Roadmap)
-This project serves as a foundational prototype for my Master's research in South Korea, focusing on:
+This project serves as a foundational prototype for my Master's research, focusing on:
 
 Oculomics: Linking retinal biomarkers to systemic cardiovascular health.
 
