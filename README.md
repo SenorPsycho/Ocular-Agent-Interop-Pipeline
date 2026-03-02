@@ -1,11 +1,11 @@
-EyeAgent-Sync: Agentic Orchestration for Standardized Ophthalmic Reporting
+**EyeAgent-Sync: _Agentic Orchestration for Standardized Ophthalmic Reporting_**
 
-📌 Overview
+**Overview**
 EyeAgent-Sync is a multi-agent AI pipeline designed to bridge the "Interoperability Gap" in digital ophthalmology. While traditional AI models focus solely on diagnosis, this project introduces an Agentic Layer that automates the collection, validation, and standardization of clinical findings into hospital-ready formats (HL7 FHIR).
 
 In developed healthcare systems like South Korea, the lack of standardization between different imaging hardware (Topcon, Zeiss, etc.) is a major bottleneck. EyeAgent-Sync solves this by orchestrating specialized AI agents to ensure every scan results in a uniform, actionable medical record.
 
-🏗️ System Architecture
+**System Architecture**
 The system follows a Three-Agent Orchestration logic:
 
 Agent A (The Vision Specialist): A Deep Learning model (U-Net/ViT) that extracts quantitative features (Optic Disc ratio, Lesion counts) from raw Fundus images.
@@ -14,7 +14,7 @@ Agent B (The Knowledge Harmonizer): An LLM-based agent that maps vision findings
 
 Agent C (The Clinical Auditor): A logic-check agent that validates the report against medical constraints (e.g., "If CDR > 0.7, flag for Glaucoma review").
 
-🛠️ Technical Stack
+**Technical Stack**
 Imaging: PyTorch, MONAI (Medical Open Network for AI), OpenCV.
 
 Orchestration: LangChain / LangGraph.
@@ -27,7 +27,7 @@ Models: * Vision: EfficientNet-B3 (Transfer Learning).
 
 Cognitive: Gemini-1.5-Flash / Llama-3.
 
-📊 Dataset & Methodology
+**Dataset & Methodology**
 This project utilizes the IDRiD (Indian Diabetic Retinopathy Image Dataset):
 
 Segmentation: Pixel-level annotations for Optic Disc and retinal lesions.
@@ -40,7 +40,7 @@ CLAHE: Contrast Limited Adaptive Histogram Equalization for enhanced vessel visi
 
 Circular Cropping: Automated ROI (Region of Interest) extraction centered on the Optic Disc.
 
-🚀 Getting Started
+**Getting Started**
 1. Installation
 Bash
 git clone https://github.com/SenorPsycho/EyeAgent-Sync.git
@@ -51,7 +51,7 @@ Python
 # Coming soon: A single command to process an image and generate a FHIR JSON report
 python run_pipeline.py --image data/sample_retina.jpg --output report.json
 
-🎯 Research Goals (M.S. Roadmap)
+**Research Goals (M.S. Roadmap)**
 This project serves as a foundational prototype for my Master's research, focusing on:
 
 Oculomics: Linking retinal biomarkers to systemic cardiovascular health.
